@@ -15,16 +15,16 @@ namespace lab1
     {
         static void firstTask()
         {
-            Console.WriteLine("Введите массу: ");
+            Console.WriteLine("Введите массу в килограммах: ");
             double weight = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите длину: ");
+            Console.WriteLine("Введите длину в метрах: ");
             double length = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите ширину: ");
+            Console.WriteLine("Введите ширину в метрах: ");
             double width = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите высоту предмета: ");
-            int height = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите высоту предмета в метрах: ");
+            double height = Convert.ToDouble(Console.ReadLine());
             double density = (weight * 2) / (length * width * height);
-            Console.WriteLine($"Ваш ответ {density}");
+            Console.WriteLine($"Плотность предмета {density} кг/м^3");
         }
 
         static void secondTask()
